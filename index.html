@@ -365,8 +365,8 @@ class Component extends DCLogic {
       set("[data-hero-cta='primary']", { border: m ? "1px solid #c9a961" : "none" });
       set("[data-hero-cta='ghost']", { border: "1px solid #3a3f39" });
       set("[data-portrait]", m
-        ? { minHeight: "0", aspectRatio: "4 / 5" }
-        : { minHeight: "0", aspectRatio: "2 / 3" });
+        ? { minHeight: "0", aspectRatio: "4 / 5", width: "100%" }
+        : { minHeight: "0", aspectRatio: "2 / 3", width: "75%" });
       set("[data-hero-image]", m
         ? { minHeight: "0", aspectRatio: "1 / 1" }
         : { minHeight: "clamp(380px, 54vh, 640px)", aspectRatio: "auto" });

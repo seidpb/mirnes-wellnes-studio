@@ -16,7 +16,7 @@
   html, body { scroll-padding-top: 100px; scroll-behavior: smooth; }
   #vrh, #o-meni, #tretmani, #ritual, #kviz, #kontakt { scroll-margin-top: 100px; }
   * { box-sizing: border-box; }
-  html, body, #dc-root, #dc-root > * { width: 100%; max-width: none; }
+  html, body { width: 100%; max-width: none; }
   a { color: #c9a961; text-decoration: none; }
   a:hover { color: #e0c489; }
   ::selection { background: #c9a961; color: #121513; }
@@ -70,8 +70,8 @@
   </section>
 
   <section id="o-meni" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: clamp(32px, 5vw, 84px); padding: clamp(64px, 9vw, 136px) clamp(20px, 5vw, 64px); background: #171a16; border-bottom: 1px solid #262a26;">
-    <div style="display: grid; gap: 16px; min-width: 0;">
-      <div data-portrait="true" style="position: relative; aspect-ratio: 2 / 3;">
+    <div style="display: grid; gap: 16px; min-width: 0; justify-items: start; align-content: center;">
+      <div data-portrait="true" style="position: relative; aspect-ratio: 2 / 3; width: 75%;">
         <img src="images/mir-portret.webp" alt="Mirnes" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;" />
       </div>
     </div>

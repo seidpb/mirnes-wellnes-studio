@@ -2,15 +2,18 @@
 
 Landing page studija za masažu MIR (Priboj).
 
-## Postavljanje
+## Struktura
 
-`index.html` je samostalan fajl — sve (stilovi, skripte, fotografije) je ugrađeno u njega.
+- `index.html` — stranica
+- `support.js` — runtime koji stranica učitava (mora ostati pored index.html)
+- `images/` — fotografije (hero, portret, 8 tretmana)
 
-GitHub Pages: u repozitorijumu otvori **Settings → Pages**, izvor postavi na branch `main`, folder `/ (root)`. Stranica će biti dostupna na `https://<korisnik>.github.io/<repo>/`.
+Sve tri stvari idu u root repozitorijuma, folder `images` sa svojim sadržajem.
 
-Bilo koji drugi hosting: prebaci `index.html` u root i to je sve.
+## Objavljivanje (GitHub Pages)
 
-## Sadržaj
+Settings → Pages → Source: branch `main`, folder `/ (root)`. Sajt je na `https://<korisnik>.github.io/<repo>/`.
 
-- Hero, Šta radim (8 tretmana), O meni, Kako izgleda termin, Utisci klijenata, Kviz preporuke, Kontakt s mapom
-- Mobilna verzija: horizontalni izbor tretmana, kvadratna hero slika, kompaktan header
+## Zamjena fotografije
+
+Prebaci novu sliku u `images/` pod istim imenom (npr. `mir-hero.webp`, `mir-tretman-3.webp`) i commituj.
